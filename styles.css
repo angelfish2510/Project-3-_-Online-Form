@@ -5,9 +5,16 @@
 * {
     box-sizing: border-box;
   }
+
+header {
+  background: navy;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
   ​
-  body {
-    font-family: 'Inter', sans-serif;
+body {
+    font-family: 'Merriweather', serif;
     margin: 0 auto;
     max-width: 768px;
     font-weight: 200;
@@ -27,20 +34,35 @@ input {
 
 /* ---- Navigation ---- */
 
+
 /* ---- Flex Containers ---- */
 
 .contact-info {
   padding: 50px 50px 35px 50px;
 }
 
-.contact-info .flex-pair {
+.contact-info,
+.flex-pair,
+.newsletter {
   display: flex;
   flex-direction: column;
 }
 
+.contact-info label {
+  margin-bottom: 10px;
+}
+​
+.contact-info input {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
 /* ---- Page Elements ---- */
 
-
+#telephone,
+#zip {
+  max-width: 50%;
+}
 
   /* ================================= 
   Media Queries
