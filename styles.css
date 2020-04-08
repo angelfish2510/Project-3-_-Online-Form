@@ -1,0 +1,47 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+  }
+  ​
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    max-width: 768px;
+    font-weight: 200;
+    background-color: #093145;
+    color: #fff;
+  }
+
+  
+input {
+    border: 1px solid white;
+  }
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+/* ---- Navigation ---- */
+
+/* ---- Flex Containers ---- */
+
+.contact-info {
+  padding: 50px 50px 35px 50px;
+}
+
+.contact-info .flex-pair {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- Page Elements ---- */
+
+
+
+  /* ================================= 
+  Media Queries
+==================================== */

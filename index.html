@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lisa's Online Form</title> 
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="normalize.css"> -->
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="header">
+      <h1 class="name">The Code Review</h1>
+    </div>
+  </header>
+
+  <h3>Sign Up for our Newsletter</h1>
+  <p>Get the latest news on how your code is doing right in your inbox.</p>
+
+  <form class="registration" action="index.html" method="post">
+    ​<fieldset class="contact-info">
+      <legend>Contact Information</legend>
+
+      <div class="flex-pair">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" />
+      </div>
+
+      <div class="flex-pair">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      
+      <div class="flex-pair">
+        <label for="telephone">Phone Number</label>
+        <input type="tel" id="telephone" name="telephone" />
+      </div>
+      
+      <div class="flex-pair">
+        <label for="street">Street Address</label>
+        <input type="text" id="street" name="street_address" />
+      </div>
+      
+      <div class="flex-pair">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city_address" />
+      </div>
+      
+      <div class="flex-pair">
+        <label for="state">State</label>
+        <select id="state" name="state_address">
+          <optgroup label="States">
+            <option value="AL">Alabama AL</option>
+            <option value="AK">Alaska	AK</option>
+            <option value="AZ">Arizona	AZ</option>
+            <option value="AR">Arkansas	AR</option>
+            <option value="CA">California	CA</option>
+            <option value="CO">Colorado	CO</option>
+            <option value="CT">Connecticut	CT</option>
+            <option value="DE">Delaware	DE</option>
+            <option value="FL">Florida	FL</option>
+            <option value="GA">Georgia	GA</option>
+            <option value="HI">Hawaii	HI</option>
+            <option value="ID">Idaho	ID</option>
+            <option value="IL">Illinois	IL</option>
+            <option value="IN">Indiana	IN</option>
+            <option value="IA">Iowa	IA</option>
+            <option value="KS">Kansas	KS</option>
+            <option value="KY">Kentucky	KY</option>
+            <option value="LA">Louisiana	LA</option>
+            <option value="ME">Maine	ME</option>
+            <option value="MD">Maryland	MD</option>
+            <option value="MA">Massachusetts	MA</option>
+            <option value="MI">Michigan	MI</option>
+            <option value="MN">Minnesota	MN</option>
+            <option value="MS">Mississippi	MS</option>
+            <option value="MO">Missouri	MO</option>
+            <option value="MT">Montana	MT</option>
+            <option value="NE">Nebraska	NE</option>
+            <option value="NV">Nevada	NV</option>
+            <option value="NH">New Hampshire	NH</option>
+            <option value="NJ">New Jersey	NJ</option>
+            <option value="NM">New Mexico	NM</option>
+            <option value="NY">New York	NY</option>
+            <option value="NC">North Carolina	NC</option>
+            <option value="ND">North Dakota	ND</option>
+            <option value="OH">Ohio	OH</option>
+            <option value="OK">Oklahoma	OK</option>
+            <option value="OR">Oregon	OR</option>
+            <option value="PA">Pennsylvania	PA</option>
+            <option value="RI">Rhode Island	RI</option>
+            <option value="SC">South Carolina	SC</option>
+            <option value="SD">South Dakota	SD</option>
+            <option value="TN">Tennessee	TN</option>
+            <option value="TX">Texas	TX</option>
+            <option value="UT">Utah	UT</option>
+            <option value="VT">Vermont	VT</option>
+            <option value="VA">Virginia	VA</option>
+            <option value="WV">West Virginia	WV</option>
+            <option value="WI">Wisconsin	WI</option>
+            <option value="WY">Wyoming	WY</option>
+          </optgroup>
+          <optgroup label="Territories">
+            <option value="DC">District of Columbia	DC</option>
+            <option value="MH">Marshall Islands	MH</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="flex-pair">
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip" name="zip_address" />
+      </div>
+  ​
+  </fieldset>
+
+  ​<fieldset class="newsletter">
+    <legend>Newsletter</legend>
+
+    <div class="flex-pair">
+      <label for="news_intrest">Select the Newsletters you would like to receive</label>
+      <input type="checkbox" id="htmlnews" name="interest_html" /><label for="htmlnews">HTML News</label><br>
+      <input type="checkbox" id="cssnews" name="interest_css" /><label for="cssnews">CSS News</label><br>
+      <input type="checkbox" id="javascriptnews" name="interest_javascript" /><label for="javascriptnews">Javascript News</label>
+    </div>
+    <div class="flex-pair">
+      <label for="news_format">Newsletter Format</label>
+      <input type="radio" id="htmlformat" name="newsformat" /><label for="htmlformat">HTML</label><br>
+      <input type="radio" id="plainformat" name="newsformat" /><label for="plainformat">Plain Text</label>
+    </div>
+
+    <div class="flex-pair">
+      <label for="otherinterests">Other topics you'd like to hear about</label>
+      <textarea id="otherinterests" name="additional_interests"></textarea>
+    </div>
+
+    <div class="flex-pair">
+      <button type="submit">Sign Up</submit>
+    </div>
+​
+</fieldset>  
+    </form>
+​
+</body>
+</html>
