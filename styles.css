@@ -12,7 +12,7 @@ header {
   text-transform: uppercase;
   text-align: center;
 }
-  ​
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0 auto;
@@ -62,6 +62,14 @@ input {
 .contact-info input {
   height: 50px;
   margin-bottom: 15px;
+}
+
+/* ---- Attribute Selectors ---- */
+
+form [class="flex-pair"] {
+  padding: 20px 24px;
+  background: green;
+
 }
 
 /* ---- Page Elements ---- */
