@@ -80,7 +80,8 @@ form [class="flex-pair"] {
 
 input::placeholder {
   text-align: right;
-  /* margin-right: 2px; */
+  padding-right: 10px;
+  font-style: italic;
 }
 
 label,
