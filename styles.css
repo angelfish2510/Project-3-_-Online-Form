@@ -18,12 +18,13 @@ body {
     margin: 0 auto;
     max-width: 768px;
     font-weight: 200;
-    color: #fff;
   }
 
   
 input {
     border: 1px solid white;
+    background-color: lightgray;
+
   }
 
 /* ================================= 
@@ -41,9 +42,9 @@ input {
 
 /* ---- Flex Containers ---- */
 
-.contact-info {
+/* .contact-info {
   padding: 50px 50px 35px 50px;
-}
+} */
 
 .contact-info,
 .flex-pair,
@@ -51,7 +52,13 @@ input {
   display: flex;
   flex-direction: column;
   border: none;
-  text-align: left;
+  align-items: flex-start;
+  width: 100%;
+  /* text-align: left; */
+}
+
+.contact-info: {
+  padding: 0px;
 }
 
 .contact-info label {
@@ -69,6 +76,16 @@ form [class="flex-pair"] {
   padding: 20px 24px;
   background: green;
 
+}
+
+input::placeholder {
+  text-align: right;
+  /* margin-right: 2px; */
+}
+
+label,
+input {
+  width: 100%;
 }
 
 /* ---- Page Elements ---- */
