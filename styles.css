@@ -34,6 +34,11 @@ input {
 
 /* ---- Navigation ---- */
 
+/* ---- tbd ---- */
+
+.intro {
+  text-align: center;
+}
 
 /* ---- Flex Containers ---- */
 
@@ -46,6 +51,8 @@ input {
 .newsletter {
   display: flex;
   flex-direction: column;
+  border: none;
+  text-align: left;
 }
 
 .contact-info label {
