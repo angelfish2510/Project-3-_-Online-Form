@@ -179,6 +179,10 @@ input:focus {
   color: purple;
 }
 
+textarea:focus {
+  color: purple;
+}
+
 input[type="checkbox"]:checked + label {
   font-weight: bold;
 }
@@ -212,7 +216,6 @@ textarea:focus {
     flex-basis: 25%;
     height: 50px;
     margin: auto 0;
-    align-content: center;
   }
 
   #zip {
