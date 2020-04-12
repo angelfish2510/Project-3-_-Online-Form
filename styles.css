@@ -56,11 +56,6 @@ button {
     margin-bottom: 15px;
   }
 
-  input:checked {
-    height: 50px;
-    width: 50px;
-  }
-
   footer {
     text-align: center;
     font-style: italic;
@@ -172,7 +167,7 @@ input::placeholder {
   max-width: 50%;
 }
 
-/* ---- Psuedo Class ---- */
+/* ---- Psuedo Classes ---- */
 
 input:hover,
 select:hover,
@@ -180,11 +175,23 @@ textarea:hover {
   border: 2px solid blue;
 }
 
-input:focus,
+input:focus {
+  color: purple;
+}
+
+input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: bold;
+}
+
+/* input:focus-within,
 select:focus,
 textarea:focus {
   border-color: purple;
-}
+} */
 
   /* ================================= 
   Media Queries
