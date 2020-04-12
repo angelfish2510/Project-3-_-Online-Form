@@ -7,7 +7,7 @@
   }
 
 header {
-  background: navy;
+  background: #00044e;
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -19,7 +19,7 @@ body {
     margin: 0 auto;
     max-width: 768px;
     font-weight: 200;
-    color: grey;
+    color: #8b8b8b;
   }
 
   
@@ -27,7 +27,7 @@ input:not([type="radio"]):not([type="checkbox"]),
 select,
 textarea,
 button {
-    border: 1px solid white;
+    border: 1px solid #e9e7d8;
     border-radius: 5px;
     background-color: lightgray;
     width: 100%;
@@ -48,7 +48,7 @@ button {
   }
 
   h3 {
-    color: black;
+    color: #00044e;
   }
 
   h5 {
@@ -77,15 +77,20 @@ button {
 }
 
 .thick {
-  border: 3px solid black;
+  border: 3px solid #00044e;
   width: 92%;
   margin-bottom: 2px;
 }
 
 .thin {
-  border: 1.2px solid black;
+  border: 1.2px solid #00044e;
   width: 92%;
   margin-top: 1px;
+}
+
+.main-contact {
+  background-color: #e6fcf8;
+  margin-bottom: 9px;
 }
 
 .contact-info h3 {
@@ -94,6 +99,11 @@ button {
 
 .newsh3 {
   margin-top: 0px;
+}
+
+.secondary-news {
+  background-color: #d9f1fb;
+  padding-bottom: 15px;
 }
 
 /* .registration {
@@ -204,6 +214,7 @@ textarea:focus {
 @media (min-width: 768px) {
   .contact-info .flex-pair {
     flex-direction: row;
+    align-items: center;
   }
 
   .contact-info input,
@@ -214,12 +225,24 @@ textarea:focus {
 
   .contact-info label {
     flex-basis: 25%;
-    height: 50px;
     margin: auto 0;
+  }
+
+ .introdiv {
+   margin-top: 35px;
+ }
+ 
+  .intro {
+    margin-bottom: 1px;
+    margin-top: 8px;
   }
 
   #zip {
     max-width: 25%;
+  }
+
+  .button {
+    padding-top: 0px;
   }
 
 }

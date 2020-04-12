@@ -25,37 +25,38 @@
 <hr class="thin">
 
   <form class="registration" action="index.html" method="post">
-    ​<fieldset class="contact-info">
+    <div class="main-contact">
+      ​<fieldset class="contact-info">
       <legend><h3>Contact Information</h3></legend>
 
       <div class="flex-pair">
         <label for="name">Full Name</label>
-        <input type="text" id="name" placeholder="Required" name="name" />
+        <input type="text" id="name" placeholder="Required" name="name" required>
       </div>
 
       <div class="flex-pair">
         <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="Required" name="email" />
+        <input type="email" id="email" placeholder="Required" name="email" required>
       </div>
       
       <div class="flex-pair">
         <label for="telephone">Phone Number</label>
-        <input type="tel" id="telephone" name="telephone" />
+        <input type="tel" id="telephone" name="telephone">
       </div>
       
       <div class="flex-pair">
         <label for="street">Street Address</label>
-        <input type="text" id="street" name="street_address" />
+        <input type="text" id="street" name="street_address">
       </div>
       
       <div class="flex-pair">
         <label for="city">City</label>
-        <input type="text" id="city" name="city_address" />
+        <input type="text" id="city" name="city_address">
       </div>
       
       <div class="flex-pair">
         <label for="state">State</label>
-        <select id="state" placholder="Choose State" name="state_address">
+        <select id="state" placeholder="Choose State" name="state_address">
           <optgroup label="States">
             <option value="AL">Alabama AL</option>
             <option value="AK">Alaska	AK</option>
@@ -120,40 +121,44 @@
       </div> 
       ​
   </fieldset>
-
+</div>
   <hr class="thin">
 
 
-  ​<fieldset class="newsletter">
+  <div class="secondary-news">
+    <fieldset class="newsletter">
     <legend><h3 class="newsh3">Newsletter</h3></legend>
 
     <div>
       <label><h5>Select the Newsletters you would like to receive</h5></label>
       <div class="newsletter_content">
-        <input type="checkbox" id="htmlnews" name="interest_html" /><label for="htmlnews">HTML News</label><br>
-      <input type="checkbox" id="cssnews" name="interest_css" /><label for="cssnews">CSS News</label><br>
-      <input type="checkbox" id="javascriptnews" name="interest_javascript" /><label for="javascriptnews">Javascript News</label>
+        <input type="checkbox" id="htmlnews" name="interest_html"><label for="htmlnews">HTML News</label><br>
+      <input type="checkbox" id="cssnews" name="interest_css"><label for="cssnews">CSS News</label><br>
+      <input type="checkbox" id="javascriptnews" name="interest_javascript"><label for="javascriptnews">Javascript News</label>
     </div>
   </div>
     <div>
       <label><h5>Newsletter Format</h5></label>
       <div class="newsletter_format">
-      <input type="radio" id="htmlformat" name="news_format" /><label for="htmlformat">HTML</label><br>
+      <input type="radio" id="htmlformat" name="news_format" required/><label for="htmlformat">HTML</label><br>
       <input type="radio" id="plainformat" name="news_format" /><label for="plainformat">Plain Text</label>
     </div>
   </div>
 
     <div class="flex-pair">
       <label for="otherinterests">Other topics you'd like to hear about</label>
-      <textarea id="otherinterests" name="additional_interests"></textarea>
+      <textarea id="otherinterests" name="additional_interests" placeholder="The more you ask for the more we can give!"></textarea>
     </div>
 
-    <div class="flex-pair">
+  </div>
+
+    <div class="flex-pair button">
       <button type="submit"><b>Sign Up</b></button>
     </div>
 ​
 </fieldset>  
-    </form>
+
+ </form>
 
     <footer>
       <p>Copyright the Code Review</p>
