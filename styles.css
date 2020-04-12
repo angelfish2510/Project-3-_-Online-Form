@@ -197,6 +197,7 @@ textarea:hover {
 
 input:focus {
   color: purple;
+  background-color: green;
 }
 
 textarea:focus {
