@@ -56,6 +56,11 @@ button {
     margin-bottom: 15px;
   }
 
+  input:checked {
+    height: 50px;
+    width: 50px;
+  }
+
   footer {
     text-align: center;
     font-style: italic;
@@ -66,20 +71,40 @@ button {
   Base Layout Styles
 ==================================== */
 
-
-/* ---- Navigation ---- */
-
 /* ---- tbd ---- */
 
 .intro {
   text-align: center;
 }
 
-/* ---- Flex Containers ---- */
+.introdiv {
+  margin-bottom: 40px;
+}
 
-/* .contact-info {
-  padding: 50px 50px 35px 50px;
+.thick {
+  border: 3px solid black;
+  width: 92%;
+  margin-bottom: 2px;
+}
+
+.thin {
+  border: 1.2px solid black;
+  width: 92%;
+  margin-top: 1px;
+}
+
+.contact-info h3 {
+  margin-top: 0px;
+}
+
+.newsh3 {
+  margin-top: 0px;
+}
+
+/* .registration {
+  border-style: double; 
 } */
+/* ---- Flex Containers ---- */
 
 .contact-info,
 .flex-pair,
@@ -153,6 +178,12 @@ input:hover,
 select:hover,
 textarea:hover {
   border: 2px solid blue;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: purple;
 }
 
   /* ================================= 
