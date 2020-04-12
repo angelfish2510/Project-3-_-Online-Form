@@ -179,10 +179,12 @@ input::placeholder {
 
 /* ---- Psuedo Classes ---- */
 
-input:hover,
+input[type]:hover,
 select:hover,
 textarea:hover {
-  border: 2px solid blue;
+  border: 2px solid purple;
+  background-color: #9fe2bf;
+  transition: background-color 2.5s ease-out;
 }
 
 input:focus {
