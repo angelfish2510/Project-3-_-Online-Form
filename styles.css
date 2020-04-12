@@ -68,6 +68,12 @@ button {
 
 /* ---- tbd ---- */
 
+.name {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+
 .intro {
   text-align: center;
 }
@@ -90,7 +96,8 @@ button {
 
 .main-contact {
   background-color: #e6fcf8;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .contact-info h3 {
@@ -104,6 +111,7 @@ button {
 .secondary-news {
   background-color: #d9f1fb;
   padding-bottom: 15px;
+  padding-top: 35px;
 }
 
 /* .registration {
