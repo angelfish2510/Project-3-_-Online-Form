@@ -22,7 +22,6 @@ body {
     color: #8b8b8b;
   }
 
-  
 input:not([type="radio"]):not([type="checkbox"]),
 select,
 textarea,
@@ -47,13 +46,17 @@ button {
     margin-top: 10px;
   }
 
-  h3 {
+  legend {
     color: #00044e;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 5px;
   }
 
-  h5 {
+  label {
     margin-top: 0px;
     margin-bottom: 15px;
+    line-height: 3em;
   }
 
   footer {
@@ -110,13 +113,10 @@ button {
 
 .secondary-news {
   background-color: #d9f1fb;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   padding-top: 35px;
 }
 
-/* .registration {
-  border-style: double; 
-} */
 /* ---- Flex Containers ---- */
 
 .contact-info,
@@ -130,17 +130,8 @@ button {
   /* text-align: left; */
 }
 
-.contact-info: {
-  padding: 0px;
-}
-
 .contact-info label {
   margin-bottom: 10px;
-}
-​
-.contact-info input {
-  height: 50px;
-  margin-bottom: 15px;
 }
 
 .newsletter_content,
@@ -187,22 +178,26 @@ input::placeholder {
 
 /* ---- Psuedo Classes ---- */
 
+input,
+select,
+textarea {
+  transition: background-color 4s, border 2s ease;
+}
+
 input[type]:hover,
 select:hover,
 textarea:hover {
   border: 2px solid purple;
   background-color: #9fe2bf;
-  transition: background-color 2.5s ease-out;
+  /* transition: background-color 2.5s; */
 }
 
-input:focus {
-  color: purple;
-  background-color: green;
-}
-
+input:not([type="radio"]):not([type="checkbox"]):focus,
 textarea:focus {
-  color: purple;
-}
+    background-color: lightskyblue;
+    border: 2px solid #00044e;
+    color: purple;
+  } 
 
 input[type="checkbox"]:checked + label {
   font-weight: bold;
@@ -254,6 +249,7 @@ textarea:focus {
 
   .button {
     padding-top: 0px;
+    margin-top: 10px;
   }
 
 }
