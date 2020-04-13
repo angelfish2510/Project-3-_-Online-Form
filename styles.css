@@ -12,6 +12,7 @@ header {
   text-transform: uppercase;
   text-align: center;
   padding: 8px 0px;
+  width: 100%;
 }
 
 body {
@@ -218,6 +219,22 @@ textarea:focus {
 ==================================== */
 
 @media (min-width: 768px) {
+ 
+  body {
+   max-width: 100%;
+ }
+
+ .wrap {
+   max-width: 768px;
+   margin: 0 auto;
+   max-width: 768px;
+ }
+ 
+ .thick,
+ .thin {
+  width: 100%;
+  }
+
   .contact-info .flex-pair {
     flex-direction: row;
     align-items: center;
